@@ -1,19 +1,13 @@
 "use client"
 
 import type React from "react"
-
-import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Mail, MapPin, Send } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 export function Contact() {
   return (
     <div id="contact" className="min-h-screen p-8">
-      <div className="max-w-6xl mx-auto space-y-12">
+      <div className="max-w-6xl mx-auto space-y-8">
         <div className="text-center space-y-4">
           <h1 className="text-3xl md:text-4xl font-bold hover:text-blue-500 transition-colors duration-200">Get In Touch</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto hover:text-foreground transition-colors duration-200">
@@ -22,7 +16,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           <Card className="hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
