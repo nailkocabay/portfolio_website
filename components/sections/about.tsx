@@ -59,7 +59,7 @@ export function About() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div>
-                    <h4 className="font-semibold">Data Analysis & Machine Learning</h4>
+                    <h4 className="font-semibold">Machine Learning & Data Analysis</h4>
                     <p className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
                       Implementing deep learning models for data analysis, achieving high accuracy in classification
                       tasks.
