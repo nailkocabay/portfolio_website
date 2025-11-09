@@ -81,7 +81,7 @@ export function AppSidebar() {
             </div>
             <div className="text-center">
               <h2 className="font-semibold text-lg">Nail Kocabay</h2>
-              <p className="text-sm text-muted-foreground">Front End Developer</p>
+              <p className="text-sm text-muted-foreground">AI Engineer</p>
             </div>
           </div>
         </SidebarHeader>
