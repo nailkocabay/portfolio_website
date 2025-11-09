@@ -5,17 +5,17 @@ import { Github } from "lucide-react"
 
 const projects = [
   {
+    title: "Suicide Content Analysis Research",
+    description:
+      "Authored a research paper on detecting suicidal intent in social media posts using deep learning models. Implemented and compared two unused models in literature, achieving 97% accuracy in both models.",
+    technologies: ["Python", "Deep Learning", "Data Analysis", "Machine Learning"],
+  },
+  {
     title: "To Do App",
     description:
       "Built a responsive To-Do List app with React, featuring task creation, completion tracking, and local storage support. Designed with a clean UI and modular component structure.",
     technologies: ["JavaScript", "React", "Web Development"],
     githubUrl: "https://github.com/nailkocabay/To-Do-App_React",
-  },
-  {
-    title: "Suicide Content Analysis Research",
-    description:
-      "Authored a research paper on detecting suicidal intent in social media posts using deep learning models. Implemented and compared two unused models in literature, achieving 97% accuracy in both models.",
-    technologies: ["Python", "Deep Learning", "Data Analysis", "Machine Learning"],
   },
   {
     title: "Travel Reservation App",
