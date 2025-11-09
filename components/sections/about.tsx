@@ -37,10 +37,9 @@ export function About() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground hover:text-foreground transition-colors duration-200">
-                  I am a third-year Computer Engineering student at Marmara University's Faculty of Technology, seeking
-                  opportunities to apply my technical knowledge in real-world projects. I am passionate about Software
-                  Development, continuously striving to improve myself and stay up to date with the
-                  latest technologies.
+                  I am a fourth-year Computer Engineering student at Marmara University’s Faculty of Technology, eager to apply my experience in Artificial Intelligence and intelligent system design to real-world projects.
+                  As an aspiring AI Engineer, I am passionate about developing systems that combine machine learning, natural language processing, and automation. I continuously strive to enhance my technical skills, explore new technologies, and contribute to innovative projects that bridge human and machine intelligence.
+                  I am currently seeking opportunities to grow as an AI Engineer and collaborate on impactful projects that push the boundaries of intelligent software development.
                 </p>
                 <p className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                   With my analytical thinking skills, fast-learning ability, and problem-solving mindset, I believe I
