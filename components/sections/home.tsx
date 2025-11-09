@@ -11,10 +11,10 @@ export function Home() {
             Hello, I'm Nail Kocabay
           </h1>
           <h2 className="text-xl md:text-2xl text-muted-foreground hover:text-foreground transition-colors duration-200">
-            Computer Engineering Student & Software Developer
+            Computer Engineering Student & AI Engineer & Software Developer
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto hover:text-foreground transition-colors duration-200">
-            Third-year Computer Engineering student at Marmara University, passionate about Software Development. I continuously strive to improve myself and stay up to date with the latest technologies.
+            Fourth-year Computer Engineering student at Marmara University, passionate about Artificial Intelligence and intelligent systems. I continuously strive to improve myself, explore cutting-edge AI technologies, and apply them to real-world solutions.
           </p>
         </div>
 
