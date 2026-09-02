@@ -81,7 +81,7 @@ export function AppSidebar() {
             </div>
             <div className="text-center">
               <h2 className="font-semibold text-lg">Nail Kocabay</h2>
-              <p className="text-sm text-muted-foreground">AI Engineer</p>
+              <p className="text-sm text-muted-foreground">AI & Full-Stack Engineer</p>
             </div>
           </div>
         </SidebarHeader>
@@ -121,7 +121,7 @@ export function AppSidebar() {
             ))}
           </div>
 
-          <div className="text-center text-xs text-muted-foreground">© 2025 Nail Kocabay</div>
+          <div className="text-center text-xs text-muted-foreground">© 2026 Nail Kocabay</div>
         </SidebarFooter>
       </Sidebar>
     </React.Fragment>

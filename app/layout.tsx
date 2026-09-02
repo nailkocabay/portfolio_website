@@ -8,9 +8,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nail Kocabay",
-  description: "AI Engineer",
-  generator: 'v0.dev',
+  title: "Nail Kocabay | AI Engineer & Full-Stack Developer",
+  description: "Portfolio of Nail Kocabay - Computer Engineering student at Marmara University specializing in AI/ML engineering, multi-agent systems, backend architecture, and full-stack web applications.",
   icons: {
     icon: [
       {
