@@ -8,53 +8,24 @@ const skillCategories = [
     skills: ["Python", "C#", "Java", "C", "SQL", "JavaScript", "TypeScript", "HTML5", "CSS3"],
   },
   {
-    category: "AI / ML & Data Science",
-    skills: [
-      "Machine Learning",
-      "Multi-Agent AI",
-      "Fraud Detection",
-      "Anomaly Detection",
-      "Feature Engineering",
-      "Clustering",
-      "KNN",
-      "Recommendation Systems",
-      "Pandas",
-      "NumPy",
-      "scikit-learn",
-      "RAPIDS cuML",
-      "Dask",
-    ],
+    category: "AI / ML",
+    skills: ["Machine Learning", "Deep Learning", "Fraud Detection", "Feature Engineering"],
   },
   {
-    category: "Frameworks & Backend Architecture",
-    skills: [
-      "ASP.NET Core 8",
-      "React 18",
-      "Next.js",
-      "FastAPI",
-      "Entity Framework Core",
-      "REST APIs",
-      "Clean Architecture",
-      "CQRS",
-      "DDD",
-      "MediatR",
-      "JWT",
-      "RBAC",
-      "Socket Programming",
-    ],
+    category: "Computer Vision",
+    skills: ["YOLOv8", "ResNet", "OpenCV", "Object Detection", "Image Classification", "Image Processing"],
   },
   {
-    category: "Databases & Cloud / DevOps",
-    skills: [
-      "SQL Server",
-      "PostgreSQL",
-      "Docker",
-      "Docker Compose",
-      "Git",
-      "GitHub",
-      "Microsoft Azure",
-      "Google Cloud Platform (GCP)",
-    ],
+    category: "Generative AI",
+    skills: ["LLMs", "Prompt Engineering", "Qwen Image Edit", "ComfyUI", "Hugging Face", "VAE", "CLIP", "LoRA"],
+  },
+  {
+    category: "Frameworks",
+    skills: ["ASP.NET Core", "React", "Next.js", "FastAPI", "Flask", "scikit-learn", "PyTorch", "TensorFlow", "Pandas", "NumPy"],
+  },
+  {
+    category: "Tools & Infrastructure",
+    skills: ["REST APIs", "WebSocket", "SQL Server", "PostgreSQL", "Git", "Docker", "Azure", "GCP", "Linux"],
   },
 ]
 
@@ -70,7 +41,7 @@ export function About() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Left Column: Story & What I Do */}
+          {/* Left Column: Story & What I Do & Spoken Languages */}
           <div className="space-y-6">
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardHeader>
@@ -120,12 +91,11 @@ export function About() {
               </CardContent>
             </Card>
 
-            {/* Languages section */}
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-xl">
                   <Globe className="w-5 h-5 text-emerald-500" />
-                  Languages
+                  Spoken Languages
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex gap-4">
@@ -141,51 +111,8 @@ export function About() {
             </Card>
           </div>
 
-          {/* Right Column: Skills, Education, Experience */}
+          {/* Right Column: Experience & Education */}
           <div className="space-y-6">
-            <Card className="hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl">
-                  <Layers className="w-5 h-5 text-indigo-500" />
-                  Technical Skills
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {skillCategories.map((group) => (
-                  <div key={group.category} className="space-y-1.5">
-                    <h5 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                      {group.category}
-                    </h5>
-                    <div className="flex flex-wrap gap-1.5">
-                      {group.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="text-xs font-normal hover:bg-primary/20 transition-colors">
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl">
-                  <GraduationCap className="w-5 h-5 text-amber-500" />
-                  Education
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="border-l-2 border-amber-500 pl-4 space-y-1">
-                  <h4 className="font-semibold">Computer Engineering</h4>
-                  <p className="text-sm font-medium text-muted-foreground">Marmara University, Istanbul • 2022 – 2026</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed pt-1">
-                    GPA: <strong>83.8 / 100</strong>. Completed all fourth-year coursework with only a mandatory 18-day internship remaining for graduation.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
             <Card className="hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-xl">
@@ -233,10 +160,55 @@ export function About() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-xl">
+                  <GraduationCap className="w-5 h-5 text-amber-500" />
+                  Education
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="border-l-2 border-amber-500 pl-4 space-y-1">
+                  <h4 className="font-semibold">Computer Engineering</h4>
+                  <p className="text-sm font-medium text-muted-foreground">Marmara University, Istanbul • 2022 – 2026</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed pt-1">
+                    GPA: <strong>83.8 / 100</strong>. Completed all fourth-year coursework with only a mandatory 18-day internship remaining for graduation.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
+
+        {/* Technical Skills - Full Width at the Bottom */}
+        <Card className="hover:shadow-lg transition-all duration-300">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-xl">
+              <Layers className="w-5 h-5 text-indigo-500" />
+              Technical Skills
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {skillCategories.map((group) => (
+                <div key={group.category} className="space-y-2 p-3.5 rounded-lg border bg-muted/20 hover:border-primary/30 transition-colors">
+                  <h5 className="text-xs font-bold uppercase tracking-wider text-primary">
+                    {group.category}
+                  </h5>
+                  <div className="flex flex-wrap gap-1.5">
+                    {group.skills.map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-xs font-normal hover:bg-primary/20 transition-colors">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
 }
-

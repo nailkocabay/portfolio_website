@@ -4,6 +4,7 @@ import { AppSidebar } from "@/components/app-sidebar"
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Contact } from "@/components/sections/contact"
+import { Header } from "@/components/header"
 
 export default function ContactPage() {
   return (
@@ -11,7 +12,8 @@ export default function ContactPage() {
       <SidebarProvider defaultOpen={true}>
         <div className="flex min-h-screen w-full">
           <AppSidebar />
-          <SidebarInset className="flex-1">
+          <SidebarInset className="flex-1 flex flex-col min-w-0">
+            <Header title="Contact" />
             <main className="flex-1 overflow-auto">
               <Contact />
             </main>
@@ -20,4 +22,4 @@ export default function ContactPage() {
       </SidebarProvider>
     </ThemeProvider>
   )
-} 
+}

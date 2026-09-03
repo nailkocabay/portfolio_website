@@ -16,11 +16,36 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Okey Game Analysis – Computer Vision & Optimization",
+    description:
+      "Developed an end-to-end Okey tile detection and classification pipeline using OpenCV, YOLOv8-Nano, and ResNet-18. Created a dataset of 219 images with 4,432 annotations across 55 classes. Implemented a DFS algorithm with memoization for tile-hand optimization with sub-10 ms response time and integrated into a full web app.",
+    highlight: "Achieved 99.4% mAP50, 97.26% classification accuracy & sub-10 ms DFS hand optimization response.",
+    technologies: ["OpenCV", "YOLOv8-Nano", "ResNet-18", "DFS Memoization", "Python", "Flask", "Next.js", "TypeScript", "REST APIs"],
+    category: "Computer Vision & AI",
+  },
+  {
+    title: "AI-Powered Product Image Generation System",
+    description:
+      "Developed a local GPU-based generative AI application transforming a single product image into front, side, and isometric views. Integrated Qwen Image Edit, ComfyUI, VAE, CLIP, UNET, Lightning LoRA, and AuraFlow. Built a React 18 & Vite frontend with WebSocket progress tracking.",
+    highlight: "Generates 3 product views locally in 30–60 seconds per product without paid cloud APIs.",
+    technologies: ["Generative AI", "Qwen Image Edit", "ComfyUI", "React 18", "Vite", "WebSocket", "CLIP", "UNET", "LoRA", "AuraFlow"],
+    category: "Generative AI",
+  },
+  {
     title: "Multi-Agent Fraud Reasoning System",
     description:
-      "Designed a multi-agent AI system for fraud analysis using specialized domain agents (Data Analysis, Financial Reasoning, Legal Analysis, and Final Decision Making). Integrated transaction history, behavioral features, and card-level clustering using LLMs and structured prompts.",
-    highlight: "Achieved 71.43% precision, 100% recall, 83.33% binary F1, and 79.17% macro F1 in evaluation.",
-    technologies: ["Python", "Multi-Agent AI", "LLMs", "Fraud Reasoning", "Data Pipelines", "scikit-learn"],
+      "Designed specialized AI agents for data analysis, financial reasoning, legal analysis, and final decision making using transaction history, 13 engineered behavioral features, and card-level clustering. Built parallel data reasoning pipelines with LLMs, Pandas, and Dask.",
+    highlight: "Achieved 71.43% precision, 100% recall, 83.33% binary F1, and 79.17% macro F1.",
+    technologies: ["Python", "Multi-Agent AI", "LLMs", "Fraud Reasoning", "cuML", "Pandas", "Dask", "scikit-learn"],
+    category: "AI / ML",
+  },
+  {
+    title: "Spotify Music Recommendation Platform",
+    description:
+      "Developed a content-based recommendation platform using Python, FastAPI, scikit-learn, Pandas, and NumPy. Cleaned a 114K+ track dataset down to 89,740 usable records. Implemented a KNN recommendation engine using cosine distance, feature scaling, and 10 audio features.",
+    highlight: "Cleaned 114K+ tracks to 89,740 usable records; built 10-feature KNN recommendation engine.",
+    technologies: ["Python", "FastAPI", "scikit-learn", "Pandas", "NumPy", "KNN Engine", "Recommendation Systems"],
+    githubUrl: "https://github.com/nailkocabay/spotify-recommendation-platform",
     category: "AI / ML",
   },
   {
@@ -41,15 +66,6 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/nailkocabay/E-Commerce",
     category: "Full-Stack",
-  },
-  {
-    title: "Spotify Music Recommendation Platform",
-    description:
-      "Developed a content-based recommendation platform using Python, FastAPI, scikit-learn, Pandas, and NumPy. Cleaned a 114K+ track dataset down to 89,740 usable records through duplicate and missing-value handling. Implemented a KNN recommendation engine using cosine distance, feature scaling, and 10 audio features.",
-    highlight: "Cleaned 114K+ tracks to 89,740 usable records; built 10-feature KNN recommendation engine.",
-    technologies: ["Python", "FastAPI", "scikit-learn", "Pandas", "NumPy", "KNN", "Recommendation Systems"],
-    githubUrl: "https://github.com/nailkocabay/spotify-recommendation-platform",
-    category: "AI / ML",
   },
   {
     title: "HTTP Web Server Project",
